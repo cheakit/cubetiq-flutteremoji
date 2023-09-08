@@ -37,7 +37,7 @@ class FluttermojiCustomizer extends StatefulWidget {
     this.autosave = true,
   })  : assert(
           attributeTitles == null || attributeTitles.length == attributesCount,
-          "List of Attribute Titles must be of length $attributesCount.\n"
+          "List of Attribute Titles must be of length $attributesCount and yours attributeTitles length is ${attributeTitles.length}\n"
           " You need to provide titles for all attributes",
         ),
         assert(
@@ -101,7 +101,7 @@ class _FluttermojiCustomizerState extends State<FluttermojiCustomizer>
   @override
   void initState() {
     super.initState();
-
+    print('hahahahahahahaha' + widget.attributeTitles.length.toString());
     var _fluttermojiController;
     Get.put(FluttermojiController());
     _fluttermojiController = Get.find<FluttermojiController>();
