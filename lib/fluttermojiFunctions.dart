@@ -31,7 +31,7 @@ class FluttermojiFunctions {
       'clotheColor': 1,
       'style': 0,
       'graphicType': 0,
-      'noseType': 1,
+      'noseType': 0,
     };
   }
 

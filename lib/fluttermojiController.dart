@@ -232,14 +232,14 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
             eyebrow[EyebrowType[attributeValueIndex!]] +
             '''</svg>''';
 
-      case 'mouthType':
-        return '''<svg width="20px" height="20px" viewBox="0 10 120 120">''' +
-            mouth[MouthType[attributeValueIndex!]] +
-            '''</svg>''';
-
       case 'noseType':
         return '''<svg width="20px" height="20px" viewBox="0 10 120 120">''' +
             nose[NoseType[attributeValueIndex!]] +
+            '''</svg>''';
+
+      case 'mouthType':
+        return '''<svg width="20px" height="20px" viewBox="0 10 120 120">''' +
+            mouth[MouthType[attributeValueIndex!]] +
             '''</svg>''';
 
       case 'accessoriesType':
