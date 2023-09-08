@@ -101,7 +101,6 @@ class _FluttermojiCustomizerState extends State<FluttermojiCustomizer>
   @override
   void initState() {
     super.initState();
-    print('hahahahahahahaha' + widget.attributeTitles.length.toString());
     var _fluttermojiController;
     Get.put(FluttermojiController());
     _fluttermojiController = Get.find<FluttermojiController>();
