@@ -106,7 +106,7 @@ class FluttermojiController extends GetxController {
         facialHairType: _getFluttermojiProperty('facialHairType'),
         fhColor: _getFluttermojiProperty('facialHairColor'))!;
     String _mouth = mouth['${_getFluttermojiProperty('mouthType')}'];
-    String _nose = nose['Default'];
+    String _nose = nose['${_getFluttermojiProperty('noseType')}'];
     String _eyes = eyes['${_getFluttermojiProperty('eyeType')}'];
     String _eyebrows = eyebrow['${_getFluttermojiProperty('eyebrowType')}'];
     String _accessory = accessories[_getFluttermojiProperty('accessoriesType')];
@@ -235,6 +235,11 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
       case 'mouthType':
         return '''<svg width="20px" height="20px" viewBox="0 10 120 120">''' +
             mouth[MouthType[attributeValueIndex!]] +
+            '''</svg>''';
+
+      case 'noseType':
+        return '''<svg width="20px" height="20px" viewBox="0 10 120 120">''' +
+            nose[NoseType[attributeValueIndex!]] +
             '''</svg>''';
 
       case 'accessoriesType':

@@ -30,7 +30,8 @@ class FluttermojiFunctions {
       'skinColor': 0,
       'clotheColor': 1,
       'style': 0,
-      'graphicType': 0
+      'graphicType': 0,
+      'noseType': 1,
     };
   }
 
@@ -63,7 +64,7 @@ class FluttermojiFunctions {
         facialHairType: _getFluttermojiProperty('facialHairType'),
         fhColor: _getFluttermojiProperty('facialHairColor'))!;
     String _mouth = mouth['${_getFluttermojiProperty('mouthType')}'];
-    String _nose = nose['Default'];
+    String _nose = nose['${_getFluttermojiProperty('noseType')}'];
     String _eyes = eyes['${_getFluttermojiProperty('eyeType')}'];
     String _eyebrows = eyebrow['${_getFluttermojiProperty('eyebrowType')}'];
     String _accessory = accessories[_getFluttermojiProperty('accessoriesType')];
