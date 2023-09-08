@@ -275,9 +275,9 @@ const List<String> SkinColor = [
 const List<String> NoseType = [
   'Default',
   'Pointed',
-  'Simple',
-  'Sneeze',
   'Round',
+  'Sneeze',
   'Black_Nose',
+  'Simple',
   'Pig_Nose',
 ];
