@@ -48,8 +48,8 @@ const List<String> attributeKeys = [
   "clotheColor",
   "eyeType",
   "eyebrowType",
+  "noseType",
   "mouthType",
   "skinColor",
   "accessoriesType",
-  "noseType",
 ];
